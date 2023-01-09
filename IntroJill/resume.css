@@ -1,0 +1,137 @@
+body {
+    color: #f9f6f3;
+    background-color: #2e2a27;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+
+}
+
+header{
+    color: #e7e3de;
+    background-color: #de7a28;
+    background-size: 100%;
+    min-width: 80%;
+    min-height: 235px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header>p>a {
+    text-decoration: none;
+    color: #f1edeb;
+    font-size: 56pt;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #fdf6f2;
+}
+
+a:hover {
+    color: #c51b2f;
+}
+
+.links {
+    text-decoration: none;
+    color: #82807f;
+}
+
+p {
+    font-size: 22pt;
+    margin: 30px;
+}
+
+#selfie {
+    height: 225px;
+    width: 270px;
+    justify-items: left;
+    float: left;
+    border: 5px solid #f1edeb;
+    margin-left: 87px;
+}
+
+#jillLin {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#jobtitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+.bar {
+    font-size: 10pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #5c5855;
+}
+
+.asideHeading,
+.gridHeading {
+    font-weight: bolder;
+}
+
+ul>li {
+    font-size: 14pt;
+    margin: 10px 20px;
+}
+
+.school {
+    font-style: italic;
+    color: #82807f;
+}
+
+.work1 {
+    font-size: 14pt;
+    margin: 10px;
+    margin: 10px 50px;
+}
+
+.mainResume {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "aside aside moreInfo moreInfo moreInfo moreInfo"
+        "aside aside moreInfo moreInfo moreInfo moreInfo"
+        "aside aside moreInfo moreInfo moreInfo moreInfo"
+        "aside aside moreInfo moreInfo moreInfo moreInfo"
+        "aside aside moreInfo moreInfo moreInfo moreInfo"
+}
+
+aside {
+    grid-area: aside;
+    background-color: #d8a983;
+    color: #2b2a29;
+    padding: 20px;
+}
+
+aside li {
+    margin: 10px;
+}
+
+.moreInfo {
+    grid-area: moreInfo;
+    background-color: #2e2a27;
+    padding: 25px;
+    max-width: fit-content;
+
+}
+
+@media screen and (max-width: 800px) {
+    .mainResume {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #selfie {
+        width: 50%;
+        height: 50%;
+        margin-left: 105px;
+    }
+
+    .aside, .moreInfo {
+        background-size: 100%;
+    }
+}

@@ -1,0 +1,270 @@
+body {
+    color: #2a2727;
+    font-size: 12pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    color: aliceblue;
+}
+
+header {
+    background-image: url("courseheading.jpg");
+    background-size: 100%;
+    min-height: 200px;
+    min-width: 80%;
+    border: 10px double #11364d;
+}
+
+#topHeading {
+    text-align: center;
+    color: #11364d;
+    font-size: 28pt;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+header>nav {
+    font-size: 14pt;
+    color: #11364d;
+    margin: 20px;
+    text-align: left;
+}
+
+#confirm,
+#searchButton {
+    margin: 8px;
+    color: azure;
+    background-color: #11364d;
+}
+
+.levelHeading {
+    font-size: 22pt;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.icon {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 150px;
+    border: 5px solid #b3b6b5;
+    background-color: #f8fcfb;
+}
+
+.icon1 {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 150px;
+    border: 5px solid #b3b6b5;
+    background-color: #f8fcfb;
+}
+.gridContainer1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-auto-rows: auto;
+}
+
+div>div {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.subHeading1 {
+    color: #aacfc3;
+    font-size: 14pt;
+    height: 30px;
+    padding: 10px;
+}
+
+.level1 {
+    background-color: #97cfca;
+}
+
+.grid1 {
+    background-color: #03725a;
+}
+
+.gridContainer2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas:
+        "content1 content2 content3"
+        "content4 content5 content6"
+        "footer footer footer"
+}
+
+.grid2Item1 {
+    grid-area: content1;
+}
+
+.grid2Item2 {
+    grid-area: content2;
+}
+
+.grid2Item3 {
+    grid-area: content3;
+}
+
+.grid2Item4 {
+    grid-area: content4;
+}
+
+.grid2Item5 {
+    grid-area: content5;
+}
+
+.grid2Item6 {
+    grid-area: content6;
+}
+
+.grid2Item7 {
+    grid-area: footer;
+}
+
+.subHeading2 {
+    color: #73ccf1;
+    font-size: 14pt;
+    height: 30px;
+    padding: 10px;
+}
+
+.level2 {
+    background-color: #5dbdf9;
+}
+
+.grid2 {
+    background-color: #1b5e87;
+}
+
+.gridContainer3 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-auto-rows: auto;
+}
+
+.level3 {
+    background-color: #e0bbcb;
+}
+
+.grid3 {
+    background-color: #976e80;
+}
+
+.subHeading3 {
+    color: #f6d5e3;
+    font-size: 14pt;
+    height: 30px;
+    padding: 10px;
+}
+
+.gridContainer4,
+.gridContainer5 {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.coop {
+    background-color: #e0ae8f;
+}
+
+.grid4,
+.grid5 {
+    background-color: #af6e46;
+}
+
+.subHeading4,
+.subHeading5 {
+    color: #f7d0b7;
+    font-size: 14pt;
+    height: 20px;
+}
+
+.gridContainer6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas:
+        "content1 content1 content2 content2 content3 content3"
+        "content4 content4 content4 content5 content5 content5"
+}
+
+.grid6Item1 {
+    grid-area: content1;
+}
+
+.grid6Item2 {
+    grid-area: content2;
+}
+
+.grid6Item3 {
+    grid-area: content3;
+}
+
+.grid6Item4 {
+    grid-area: content4;
+}
+
+.grid6Item5 {
+    grid-area: content5;
+}
+
+.level4 {
+    background-color: #a5a9a8;
+}
+
+.grid6 {
+    background-color: #515353;
+}
+
+.subHeading6 {
+    color: #cdcfce;
+    font-size: 14pt;
+    height: 30px;
+}
+
+footer {
+    font-size: 16pt;
+    color: #a7c4bb;
+    background-color: #515353;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a:hover {
+    color: #f78c44
+}
+
+.bottom {
+    text-decoration: none;
+    color: #4ab568;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    [class*="gridContainer"] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header>nav {
+        margin: 8px;
+    }
+
+    .icon1 {
+        width: 90%;
+    }
+}
